@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <string name="hint_owner_name">Имя Владельца</string>
+    <string name="hint_authorize">Доверенный Номер</string>
+    <string name="register_sim">Зарегистрированные SIM карты</string>
+    <string name="info_text">В случае замены SIM-карты, доверенному номеру будет отправлено уведомляющее сообщение с GPS координатами устройства.</string>
+    <string name="about_text">Это приложение сообщает об замене карты SIM, если это происходит без ведома владельца мобильного устройства.&lt;br/>
+ Сообщение включает в себя номер вставленной SIM карты, координаты GPS (если доступны) и адрес мобильного устройства (если доступен).&lt;br/>&lt;br/> &lt;b> Установка приложения &lt;/b>&lt;br/>&lt;br/>
+ 1. Заполните имя владельца мобильного устройства в поле "Имя владельца".
+ 2. Заполните доверенный телефонный номер в поле "Доверенный Номер". Доверенный номер будет получать SMS уведомления, когда SIM карта будет заменена.
+ ВНИМАНИЕ: Для получения SMS-уведомлений из-за рубежа, номер следует указать включая код страны.&lt;br/>&lt;br/>
+ 3. Для проверки правильности доверенного номера, нажмите кнопку "Тест".&lt;br/> ВНИМАНИЕ: При отправке тестового SMS-сообщения может взиматься плата.&lt;br/> На доверенный номер будет отправлено сообщение о том, что данный номер был добавлен в приложение Sim Card Change Notifier.&lt;br/>&lt;br/>
+ 4. Заполните выш электорнный адрес на котоый вы хотите получать уведомляющее письма, в случай замены SIM картыб, в поле "Your Email@example.com".
+3. Приложение зарегистрирует текущую SIM-карту установленную в телефон, и покажет его в таблице "Зарегистрированные SIM карты".&lt;br/>
+ Чтобы добавить несколько карт SIM, пожалуйста, введите или выберите другой SIM-карты без сохранения приложения.&lt;br/>
+ Когда вставляется новая SIM-карта, и приложение открыто, новая SIM-карта появится в списке зарегистрированных SIM-карт и будет выделено белым цветом.&lt;br/>&lt;br/>
+ 4. Укажите интервал отправки координат устройства. По умолчанию он будет равен 2 часам. Это интервал отправки координат устройства, чтобы отслеживать устройство.&lt;br/>&lt;br/>
+ 5. Укажите номер для отображения приложения. После сохранения приложения, оно исчезнет из списка приложений. Изменить конфигурации приложения можно будет только набрав данный номер. По умолчанию он равен: ###7226.&lt;br/>&lt;br/>
+ 6. Чтобы иметь возможность удаленно заблокировать устройство с помощю установки нового пороля, должно быть активировано права администратора. Это можно сделать из настроек роиложения.&lt;br/>&lt;br/>
+ 7. Укажите пароль при помоши которого устройство будет удаленно заблокировано.&lt;br/>
+ 8. Чтобы сохранить заполненную информацию и выйти из приложения, нажмите кнопку Сохранить.&lt;br/>
+ ВАЖНО: При сохранении приложение спросит отправить ли сообщение с сохраненными данными на доверенный номерб или нет. После этого приложение исчезнет из списка приложений.&lt;br/>&lt;br/>
+ 9. Чтобы изменить конфигурацию, пожалуйста, наберите номер для отображения приложения: %1$s&lt;br/>&lt;br/> &lt;b> SMS-уведомления и команды &lt;/b> &lt;br/>&lt;br/>
+ 1. Если SIM-карта телефона будет заменена, и SIM-карта не была зарегистрирована ранее, довереному номеру будет отпровлено SMS-уведомление, и письмо. SMS-уведомление содержит номер текущей SIM-карты, GPS координаты (если доступны) и адрес мобильного устройства (если доступно).
+ Для отслеживания телефона приложение по умолчанию продолжает отправку SMS-уведомлений каждые 2 часа. Вы можете изменить интервал отправки в настройках приложения.&lt;br/>
+ 2. Получая SMS-уведомления, владелец доверенного номера может зарегистрировать текущую SIM-карту, пославь сообщение с текстом: &lt;b> sccn_add_current_sim &lt;/b>.&lt;br/>
+ 3. Получая SMS-уведомления, владелец доверенного номера может заблокировать телефон пославь сообщение с текстом: &lt;b> sccn_block_device &lt;/b>.&lt;br/>&lt;br/>
+ 4. Владелец доверенного номера может удаленно сбросить номер для отображения. После сброса он будет равен ###7226.&lt;br/>&lt;br/>
+В более поздних версия количество SMS-команд будет увеличано.&lt;br/>
+Будьте осторожны и не терайте свой телефон. Мы протестировали приложение на многих телефонах,
+но не может быть уверены для всех моделей.
+Пожалуйста, присылайте ваши отзывы, вопросы и сообшите о проблемах.</string>
+    <!-- The templates for SMS that are being sent. -->
+    <string name="validation_sms">Здравствуйте. Это тестовое сообщение отправленное с "Sim Card Change Notifier" приложения.</string>
+    <string name="notification_sms">SIM-карта телефона была заменена.\n
+Вы можете отвечать с помощью следующих SMS команд:\n
+- sccn_add_current_sim - Зарегистритовать текущую SIM-карту\n
+- sccn_block_device - Заблокировать телефон с помощью нового пороля (ВНИМАНИЕ: на телефоне должно быть активировано права администратора у приложения)\n
+Новый пароль будет: %2$s\n
+Вы получите SMS с расположением телефона, когда будет доступно данные о его местонахождении.</string>
+    <string name="notification_email">SIM-карта телефона была заменена.&lt;br />
+Вы можете отвечать с помощью следующих SMS команд с доверенного номера(%2$s) который был упомянет в приложении:&lt;br />
+- sccn_add_current_sim - Зарегистритовать текущую SIM-карту&lt;br />
+- sccn_block_device - Заблокировать телефон с помощью нового пороля (ВНИМАНИЕ: на телефоне должно быть активировано права администратора у приложения)&lt;br />
+Новый пароль будет: %3$s&lt;br />
+Вы получите SMS с расположением телефона, когда будет доступно данные о его местонахождении.</string>
+    <string name="gps_coordinates_sms">SIM-карта телефона была заменена.\n Телефон расположен рядом с: %2$s и находится на URL: \n
+ http://maps.google.com/?q=%3$s,%4$s \n</string>
+    <string name="gps_location_sms">SIM-карта телефона была заменена.\n Телефон расположен на URL: \nhttp://maps.google.com/?q=%2$s,%3$s\n</string>
+    <string name="gps_coordinates_email">SIM-карта телефона была заменена.&lt;br />
+        Телефон расположен рядом с: %2$s и находится на URL: &lt;br />
+        &lt;a href=\"http://maps.google.com/?q=%2$s,%3$s\">http://maps.google.com/?q=%3$s,%4$s&lt;/a></string>
+    <string name="gps_location_email">SIM-карта телефона была заменена.&lt;br />         
+        Телефон расположен на URL: &lt;br />&lt;a href=\"http://maps.google.com/?q=%2$s,%3$s\">http://maps.google.com/?q=%2$s,%3$s&lt;/a></string>
+           <string name="email_template">&lt;html> 
+	&lt;body> 				      
+	&lt;div align=\"center\">&lt;img src=\"cid:%1$s\" />&lt;/div>
+	&lt;h1 align=\"center\">%2$s&lt;/h1>
+	&lt;div >Это письмо было отправлено вам, потому что этот адрес был упомянет в приложении Sim Card Change Notifier вместе с доверенным номером(%3$s).
+	Пожалуйста проигнорируйте это сообщение если эсли не подписовались.&lt;/div>
+	&lt;div >&lt;br />%4$s&lt;/div>&lt;br />
+	&lt;div align=\"center\" >&lt;a href=\"%5$s\">&lt;button>%6$s&lt;/button>&lt;/a>  
+	&lt;a href=\"%7$s\">&lt;button>%8$s&lt;/button>&lt;/a>&lt;br />
+	----- &lt;br />
+	&lt;strong>\"%9$s\"&lt;/strong>&lt;br />
+	&lt;a href=\"mailto:%11$s\">%11$s&lt;/a> &lt;br /> 
+	&lt;a href=\"%10$s\">%10$s&lt;/a> &lt;/div>
+	&lt;/html></string>
+    <string name="password_set_confirm_sms"> Телефон заблокирован с помощю следующего пароля: %2$s</string>
+    <string name="admin_rights_explanation">Если вы хотите иметь возможность удаленно заблокировать устройство, нужно активировать права администратора.</string>
+    <string name="admin_rights_missing_sms"> Приложение не имеет права администратора для установки пароля.</string>
+    <string name="new_sim_registered_sms"> Новая SIM-карта успешно зарегистрирована в приложении.</string>
+    <string name="sim_registered_sms"> Эта SIM-карта уже зарегистрирована в приложении.</string>
+    <!-- Setting Xml. -->
+    <string name="menu_settings">Настройки</string>
+    <string name="pref_setting">Настройки</string>
+    <string name="minimum_requirement">ВНИМАНИЕ: Наберите минимум %1$s символов.</string>
+    <!-- interval -->
+    <string name="pref_sms_time_title">Интервал отправки GPS координат</string>
+    <string name="pref_sms_time_summary">GPS координаты устройства будут отправленны через заданный интервал.</string>
+    <!-- unhide number -->
+    <string name="pref_unhide_number_title">Номер для отображения приложения</string>
+    <string name="pref_unhide_number_summary">При наборе этого номера будет отображено приложение.</string>
+    <!-- Administrator permissions -->
+    <string name="pref_admin_rights_title">Права Администратора</string>
+    <string name="pref_admin_rights_summary">Выберите этот параметр если хотите иметь возможность удаленно заблокировать телефон.</string>
+
+    <!-- unlock password -->
+    <string name="pref_unlock_password_title">Пароль для блокировки устройства</string>
+    <string name="pref_unlock_password_summary">Этот пароль будет использоваться для удаленного блокирования устройства.</string>
+    <!-- UI massages -->
+    <string name="alert_dialog_massage">Вы уверены, что хотите удалить SIM-карту?</string>
+    <string name="error_deleting_massage">Для активации приложения необходимо по крайней мере одна SIM-карта.</string>
+    <string name="massage_hide_icon_title">Уведомление</string>
+    <string name="massage_hide_icon">Сейчас иконка приложения исчезнет из меню приложений. \n
+ Приложение можно будет отозвать, набрав: %1$s.</string>
+    <string name="toast_on_owner_name">Пожалуйста, введите имя владельца телефона.</string>
+    <string name="toast_on_trusted_number">Пожалуйста, введите доверенный номер.</string>
+    <string name="toast_on_short_trusted_number">Доверенный номер слишком короткий.</string>
+    <string name="toast_on_invalid_email">Неверный Email адрес</string>
+    <string name="toast_no_sim_inserted">Для активации приложения необходимо установить по крайней мере одну SIM-карту.</string>
+    <string name="alert_massage_old_data">Вы хотите, экспортировать старые данные в ходе обновления?</string>
+    <!-- LAST ADDED -->
+    <string name="quit">Выйти</string>
+    <string name="yes_button">Да</string>
+    <string name="no_button">Нет</string>
+    <string name="ok_button">ОК</string>
+    <string name="old_version_warning_title">Внимание!</string>
+    <string name="old_version_warning_text">Пожалуйста, удалите старую версию.</string>
+    <string name="other_country">Другое</string>
+    <string name="app_version">Версия\n%1$s</string>
+    <string name="developer_name">Разработчик\nЗАО "Instigate Mobile"</string>
+    <string name="logo_image_desc">Logo Description</string>
+    <string name="website_title">Сайт</string>
+    <string name="licence_info">© 2015 ЗАО "Instigate Mobile"\n Ереван, Армения</string>
+    <string name="support_title">Связатся</string>
+    <string name="rate_us_title">Оценить</string>
+    <string name="unknown_error_sms">Неизвестная ошибка</string>
+    <string name="show_number_reset_seccess">Номер для отображения приложения сброшен и равнн: ###7226:</string>
+    <string name="show_number_reset_fail">Сбой при свросе номера для отображения приложения:</string>
+    <string name="app_saved_sms">Здравствуйте, Ваш номер записан в приложении Sim Card Change Notifier и вы получите сообщение при замене SIM карты. Настройки приложения могкт быть изменены при наборе %1$s номера.Также вы можете сбросить этот номер отправив SMS с sccn_reset_show_number текстом.</string>
+    <string name="toast_on_incorrect_trusted_number">Доверенный номер введен неправильео</string>
+    <string name="alert_massage_dual_sim">Նշում. Դուք պատրաստվում եք գրանցել մեկ SIM քարտ: Սեղմեք Չեղարկել, եթե Դուք ցանկանում եք գրանցել մեկից ավելի SIM քարտեր, հակառակ դեպքում սեխմեք Շարունակել:</string>
+    <string name="alert_massage_send_sms_on_save">Хотите ли вы отправить сохраненные данные на доверенный номер?</string>
+    <string name="alert_title_dual_sim">Dual Sim Телефоны</string>
+    <string name="alert_title_send_sms_on_save">Отправить SMS?</string>
+    <string name="continue_button">Продолжить</string>
+    <string name="send_sms_button">Отправить</string>
+    <string name="dont_send_sms_button">Не Отпровлять</string>
+    <string name="title_activity_about">О Приложении</string>
+    <string name="action_settings">Настройки</string>
+    <string name="title_activity_info">Помошь</string>
+    <string name="title_activity_trusted_numbers">Доверенные Номера</string>
+    <string name="country_prompt">Выберите страну</string>
+    <string name="test_button_text">Тест</string>
+    <string name="save_button_text">Сохранить</string>
+    <string name="info_button_text">Помощь</string>
+    <string name="settings_button_text">Настройки</string>
+    <string name="address">Адрес:</string>
+    <string name="cancel_button">Отмена</string>
+    <string name="test_sms_result_ok">Тестовое сообщение отправлено.</string>
+    <string name="test_sms_result_error_generic">Не удалось отправить тестовое сообщение\nПожалуйста проверьте номер и баланс карточки.</string>
+    <string name="test_sms_result_error_no_service">Не удалось отправить тестовое сообщение\nСервис недоступен։</string>
+    <string name="test_sms_result_error_null_pdu">Не удалось отправить тестовое сообщение\nPDU не предоставлено։</string>
+    <string name="test_sms_result_error_radio_off">Не удалось отправить тестовое сообщение\nСеть отключена։</string>
+    <string name="test_sms_result_error_unknown">Не удалось отправить тестовое сообщение\nПожалуйста проверьте номер, баланс карточки и сеть</string>
+ 	<string name="test_sms_result_title_info">Информация</string>
+    <string name="test_sms_result_title_error">Ошибка</string>
+</resources>

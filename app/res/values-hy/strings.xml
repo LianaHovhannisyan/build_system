@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <string name="hint_owner_name">Տիրոջ Անունը</string>
+    <string name="hint_authorize">Վստահելի համար</string>
+    <string name="register_sim">Գրանցված SIM քարտեր</string>
+    <string name="info_text">SIM քարտի փոխվելու դեպքում կարճ հաղորդագրություն կուղարկվի վստահելի հեռախոսահամարին։</string>
+    <string name="about_text">Այս ծրագիրը տեղեկացնում է SIM քարտի փոխվելու մասին, որը տեղի է ունեցել առանց հեռախոսի տիրոջ թույլտվության։&lt;br/>
+ Զեկույցը ընդգրկում է նոր տեղադրված SIM քարտի համարը, GPS կոորդինատները և հեռախոսի հասցեն։&lt;br/>&lt;br/> &lt;u>&lt;b>Ծրագրի կարգավորում&lt;/b>&lt;/u>&lt;br/>&lt;br/>
+ 1. Լրացրեք հեռաոսի տիրոջ անունը «Տիրոջ Անունը» դաշտում:&lt;br/>&lt;br/>
+ 2. Լրացրեք վստահելի հեռախոսահամրը «Վստահելի հեռախոսահամր» դաշտում. Վստահելի հեռախոսահամրը կստանա տեղեկացնող կարճ հաղորդագրություն, երբ SIM քարտը կփոխվի։&lt;br/>&lt;br/>
+ 3. Վստահելի հեռախոսահամրի ճշտությունը ստուգելու համար՝ սեղմեք «Թեստ» կոճակը։&lt;br/>&lt;b>ՈՒՇԱԴՐՈՒԹՅՈՒՆ՝&lt;/b> Փորձնական կարճ հաղորդագրություն ուղարկելը կարժենա իրական գումար(Ձեր օպերատորի սակագներով)։&lt;br/>&lt;br/>
+ 4. Լրացրեք Ձեր էլեկտրոնային հասցեն «Your Email@example.com» դաշտում։ Երբ հեռախոսի մեջ տեղադրվի չգրանցված SIM քարտ, այն կստանա դրա մասին տեղեկացնող նամակ։ &lt;br/>&lt;br/>
+ 5. Ծրագիրը կգրանցի ընթացիկ SIM քարտը և կցուցադրի այն գրանցված SIM քարտերի ցուցակում։&lt;br/>
+ Բազմակի SIM քարտ գրանցելու համար՝ տեղադրեք հաջորդ SIM քարտը՝ առանց ծրագիրը ակտիվացնելու։&lt;br/>
+ Նոր SIM քարտը տեղադրելուց հետո, այն կհայտնվի գրանցված SIM քարտերի ցուցակում և գունավորված կլինի սպիտակ գույնով։&lt;br/>&lt;br/>
+ 6. Նշեք դիրքի ուղարկման պարբերությունը կարգավորումներից։ Լռելյայն այն կլինի 2 ժամ։ Սա հեռախոսի դիրքին հետևելու նպատակով ուղղարկվող GPS կոորդինատներով կարճ հազորդագրության ուղարկման պարբերությունն է։&lt;br/>&lt;br/>
+ 7. Նշեք ծրագիրը տեսանելի դարձնելու համարը կարգավորումներից։ Լռելյայն այն կլինի՝ ###7226։ Երբ ծրագիրը ակտիվանա, այն կանհետանա հեռախոսի ծրագրերի ցուցակից։ Ծրագիրը կրկին տեսանելի դարձնելու համար զանգահարեք տվյալ համարով։&lt;br/>&lt;br/>
+ 8. Հեռախոսը նոր ծածկագրով հեռակա արգելափակելու հնարավորություն ունենալու համար անհրաժեշտ է կարգավորումներց նշել Սարքի Վարիչ կարգավորումը։&lt;br/>&lt;br/>
+ 9. Կարգավորումներից նշեք ծածկագիր, որը կօգտագործվի հեռախոսը նոր ծածկագրով հեռակա արգելափակման ժամանակ։ Լռելյայն այն պատահականորեն գեներացված ծածկագիր է։ Որպեսզի այս կարգավորումը ակտիվ լինի, անհրաժեշտ է կարգավորումներից նշված լինի Սարքի Վարիչ կարգավորեումը։&lt;br/>&lt;br/>
+ 10. Որպեսզի ծրագիրը ակտիվանա, հիշելով ներմուծված տվյալները սեղմեք "Հիշել" կոճակը։&lt;br/>
+ &lt;b>ՈՒՇԱԴՐՈՒԹՅՈՒՆ՝&lt;/b> Ակտիվացման ժամանակ ծրագիրը հիշած կարգավորումները վստահելի հեռախոսահամարին կարճ հաղորդագրություն ուղարկելու հարցում կանի։ Երբ ծրագիրը ակտիվանա, այն կանհետանա հեռախոսի ծրագրերի ցուցակից։&lt;br/>&lt;br/>
+ 11. Կարգավորումները փոփոխելու համար անհրաժեշտ է զանգահարել ծրագիրը տեսանելի դարձնելու համարով:&lt;br />&lt;br /> &lt;u>&lt;b>Տեղեկացնող հաղորդագրություններ և հրահանգներ&lt;/b>&lt;/u>&lt;br />&lt;br />
+ 1. Երբ հեռախոսի մեջ տեղադրվի այնպիսի SIM քարտ, որը նախորոք գրանցված չեր, ապա վստահելի հեռախոսահամարին կուղարկվի դրա մասին տեղեկացնող կարճ հաղորդագրությու, իսկ Ձեր էլեկտրոնային հասցեին կուղղարկվի դրա մասին տեղեկացնւզ նամակ։ն։&lt;br/>
+ Տեղեկացնող կարճ հաղորդագրությունը իր մեջ ներառում է նոր տեղադրված SIM քարտի համարը, հեռախոսի GPS կոորդինատները (հասանելիության դեպքում) և հասցեն (հասանելիության դեպքում)։
+ Հեռախոսին հետևելու համար ծրագիրը պարբերականորեն ուղարկում է կարճ հաղորդագրություն հեռախոսի կոորդինատներով։ Ըստ լռելյայն ծրագիրը կարճ հաղորդագրությունը ուղարկում է յուրաքնչյուր 2 ժամը մեկ։ Պարբերությունը կարելի է փողել ծրագրի կարգավորումներից։&lt;br/>&lt;br/>
+ 2. Վստահելի հեռախոսահամարի սեփականատերը, ստանալով տեղեկացնող կարճ հաղորդագրությունը, կարող է գրանցել նոր տեղադրված SIM քարտը՝ պատասխանելով &lt;b>sccn_add_current_sim&lt;/b> կարճ հաղորդագրությամբ։&lt;br/>&lt;br/>
+ 3. Վստահելի հեռախոսահամարի սեփականատերը, ստանալով տեղեկացնող կարճ հաղորդագրությունը, կարող է հեռակա ձևով արգելափակել հեռախոսը՝ պատասխանելով &lt;b>sccn_block_device&lt;/b> կարճ հաղորդագրությամբ։&lt;br/>&lt;br/>
+ 4. Վստահելի հեռախոսահամարի սեփականատերը, ստանալով տեղեկացնող կարճ հաղորդագրությունը, կարող է հեռակա ձևով վերաթողարկել ծրագիրը տեսանելի դարձնելու համարը՝ պատասխանելով &lt;b>sccn_reset_show_number&lt;/b> կարճ հաղորդագրությամբ։ Վերաթողարկումից հետո այն կլինի՝ ###7226։&lt;br/>&lt;br/>
+ Ծրագրի հաջորդ թողարկման ժամանակ հրահանգների քանակը կավելանա։&lt;br/>
+ Եղեք ուշադիր և մի կորցրեք ձեր հեռախոսը։ Մենք փորձարկել ենք ծրագիրը մի շարք հեռախոսների վրա, բայց չենք կարող վստահ լինել բոլորի համար։
+ Խնդրում ենք տեղյակ պահել մեզ ծրագրի վերաբերյալ ձեր կարծիքիի, հարցերի և թերությունների մասին։</string>
+    <!-- The templates for SMS that are being sent. -->
+    <string name="validation_sms">Բարև Ձեզ։ Սա թեստային հաղորդագրություն է, որը ուղղարկվել է %1$s֊ի Sim Card Change Notifier ծրագրից։</string>
+    <string name="notification_sms">%1$s֊ի հեռախոսի SIM քարտը փոխվել է։\n
+ Դուք կարող եք պատասխանել հետևյալ SMS հրահանգներով․\n
+ - sccn_add_current_sim - գրանցել նոր տեղադրված SIM քարտը\n
+ - sccn_block_device - արգելափակել հեռախոսը նոր ծածկագրով (Նշում՝ անհրաժեշտ է ծրագրը ակտիվացրած լինի, որպես սարքի վարիչ։)\n
+ Նոր ծածկագիրը կլինի՝ %2$s \n
+ Դուք  կստանքաք հեռախոսի կոորդինատներով կարճ հաղորդագրություն, երբ հասանելի կլինի հեռախոսի կոորդինատները։</string>
+    <string name="gps_coordinates_sms">%1$s֊ի հեռախոսի SIM քարտը փոխվել է։\n
+ Հեռախոսը տեղակայված է %2$s֊ի մոտ և գտնվում է URL: \n
+ http://maps.google.com/?q=%3$s,%4$s \n</string>
+    <string name="gps_location_sms">%1$s֊ի հեռախոսի SIM քարտը փոխվել է։\n
+ Հեռախոսը գտնվում է URL: \nhttp://maps.google.com/?q=%2$s,%3$s\n</string>
+    <string name="notification_email">%1$s֊ի հեռախոսի SIM քարտը փոխվել է։&lt;br />
+ Դուք կարող եք պատասխանել հետևյալ SMS հրահանգներով, ծրագրում նշված վստահելի համարից(%2$s)․&lt;br />
+ - sccn_add_current_sim - գրանցել նոր տեղադրված SIM քարտը&lt;br />
+ - sccn_block_device - արգելափակել հեռախոսը նոր ծածկագրով (Նշում՝ անհրաժեշտ է ծրագրը ակտիվացրած լինի, որպես սարքի վարիչ։)&lt;br />
+ Նոր ծածկագիրը կլինի՝ %3$s &lt;br />
+ Դուք  կստանաք հեռախոսի կոորդինատներով կարճ հաղորդագրություն, երբ հասանելի կլինի հեռախոսի կոորդինատները։</string>
+    <string name="gps_coordinates_email">%1$s֊ի հեռախոսի SIM քարտը փոխվել է։&lt;br />
+        Հեռախոսը տեղակայված է %2$s֊ի մոտ և գտնվում է URL:&lt;br />&lt;a href=\"http://maps.google.com/?q=%3$s,%4$s\">http://maps.google.com/?q=%3$s,%4$s&lt;/a>  </string>
+    <string name="gps_location_email">%1$s֊ի հեռախոսի SIM քարտը փոխվել է։&lt;br />
+ Հեռախոսը գտնվում է URL: &lt;br /> &lt;a href=\"http://maps.google.com/?q=%2$s,%3$s\">http://maps.google.com/?q=%2$s,%3$s&lt;/a>
+ &lt;html></string>
+    <string name="email_template">&lt;html> 
+	&lt;body> 				      
+	&lt;div align=\"center\">&lt;img src=\"cid:%1$s\" />&lt;/div>
+	&lt;h1 align=\"center\">%2$s&lt;/h1>
+	&lt;div > Դուք ստացել եք այս հաղորդագրությունը, որովհետև Ձեր հասցեն նշվել է Sim Card Change Notifier ծրագրում՝ վստահելի հեռախոսահամարի(%3$s) հետ միասին։
+	Խնդրում ենք անտեսել այս հաղորդագրությունը, եթե դուք չեք նշել Ձեր հասցեն։&lt;/div>
+	&lt;div >&lt;br />%4$s&lt;/div>&lt;br />
+	&lt;div align=\"center\" >&lt;a href=\"%5$s\">&lt;button>%6$s&lt;/button>&lt;/a>  
+	&lt;a href=\"%7$s\">&lt;button>%8$s&lt;/button>&lt;/a>&lt;br />
+	----- &lt;br />
+	&lt;strong>\"%9$s\"&lt;/strong>&lt;br />
+	&lt;a href=\"mailto:%11$s\">%11$s&lt;/a> &lt;br /> 
+	&lt;a href=\"%10$s\">%10$s&lt;/a> &lt;/div>
+	&lt;/html></string>
+    <string name="password_set_confirm_sms">%1$s֊ի հեռախոսը  արգելափակված  հետևյալ ծածկագրով՝ %2$s</string>
+    <string name="admin_rights_explanation">Եթե դուք ցանկանում եք հեռակա ձևով արգելափակելու հնարավորություն ունենալ, ապա անհրաժեշտ է ծրագիրը ակտիվացնել, որպես սարքի վարիչ։</string>
+    <string name="admin_rights_missing_sms">%1$s֊ի հեռախոսը հնարավոր չի արգելափակել, որովհետև ծրագիրը ակտիվացված չի որպես սարքի վարիչ։</string>
+    <string name="new_sim_registered_sms">Նոր SIM քարտը գրանցված է %1$s֊ի հեռախոսի մեջ։</string>
+    <string name="sim_registered_sms">Տվյալ SIM քարտը արդեն իսկ գրանցված եր %1$s֊ի հեռախոսի մեջ։</string>
+    <!-- Setting Xml. -->
+    <string name="menu_settings">Կարգավորումներ</string>
+    <string name="pref_setting">Կարգավորումներ</string>
+    <string name="minimum_requirement">ՈՒշադրություն՝ անհրաժեշտ է մուտքագրել առնվազն %1$s նիշ։</string>
+    <!-- interval -->
+    <string name="pref_sms_time_title">Դիրքի ուղարկման պարբերությունը</string>
+    <string name="pref_sms_time_summary">GPS կոորդինատները կուղարկվեն տրված պարբերականությամբ։</string>
+    <!-- unhide number -->
+    <string name="pref_unhide_number_title">Ծրագիրը տեսանելի դարձնելու համարը</string>
+    <string name="pref_unhide_number_summary">Զանգելով տրված համարով ծրագիրը տեսանելի կդառնա։</string>
+    <!-- Administrator permissions -->
+    <string name="pref_admin_rights_title">Սարքի Վարիչ</string>
+    <string name="pref_admin_rights_summary">Նշեք, եթե ցանկանում եք հեռախոսը հեռակա կերպով արգելափակելու հնարավորություն ունենալ:</string>
+    <!-- unlock password -->
+    <string name="pref_unlock_password_title">Ծածկագիր՝ հեռախոսը արգելափակելու համար</string>
+    <string name="pref_unlock_password_summary">Հեռակա արգելափակման դեպքում հեռախոսը կարգելափակվի տրված ծածկագրով։</string>
+    <!-- UI massages -->
+    <string name="alert_dialog_massage">Ցանկանում ե՞ք հեռացնել հեռախոսահամարը</string>
+    <string name="error_deleting_massage">Ծրագիրը ակտիվացնելու համար անհրաժեշտ է գրանցել առնվազն մեկ SIM քարտ։</string>
+    <string name="massage_hide_icon_title">Տեղեկացում</string>
+    <string name="massage_hide_icon">Այժմ ծրագիրը կանհետանա հեռախոսի ծրագրերի ցուցակից։\n
+ Ծրագիրը կրկին տեսանելի դարձնելու համար զանգահարեք %1$s հեռախոսահամարով։</string>
+    <string name="toast_on_owner_name">Խնդրում ենք մուտքագրել հեռախոսի տիրոջ անունը</string>
+    <string name="toast_on_trusted_number">Խնդրում ենք մւտքագրել վստահված հեռախոսահամարը</string>
+    <string name="toast_on_short_trusted_number">Վստահված հեռախոսահամարը կարճ է</string>
+    <string name="toast_on_invalid_email">Սխալ Email հասցե</string>
+    <string name="toast_no_sim_inserted">Ծրագիրը ակտիվացնելու համար անհրաժեշտ է տեղադրված լինի առնվազն մեկ SIM քարտ.</string>
+    <string name="alert_massage_old_data">Ցանկանւմ ե՞ք արտահանել հին տվյալները թարմացման ժամանակ։</string>
+    <!-- LAST ADDED -->
+    <string name="quit">Ելք</string>
+    <string name="yes_button">Այո</string>
+    <string name="no_button">Ոչ</string>
+    <string name="ok_button">Լավ</string>
+    <string name="old_version_warning_title">Ուշադրություն</string>
+    <string name="old_version_warning_text">Խնդրում ենք հեռացնել հին տարբերակը։</string>
+    <string name="other_country">Այլ</string>
+    <string name="app_version">Տարբերակ\n%1$s</string>
+    <string name="developer_name">Ծրագրի հեղինակ\n Ինսթիգեյթ Մոբայլ ՓԲԸ</string>
+    <string name="logo_image_desc">Logo Description</string>
+    <string name="website_title">Կայք</string>
+    <string name="licence_info">© 2015 Ինսթիգեյթ Մոբայլ ՓԲԸ\nԵրևան, Հայաստան</string>
+    <string name="support_title">Կապնվել</string>
+    <string name="rate_us_title">Գնահատել</string>
+    <string name="unknown_error_sms">Անհայտ սխալ.</string>
+    <string name="show_number_reset_seccess">%1$sի ծրագիրը տեսանելի դարձնելու համարը դարձել է իր լռելյայնը՝ ###7226:</string>
+    <string name="show_number_reset_fail">Ձախողվել է վերաթողարկել ծրագիրը տեսանելի դարձնելու համարը:</string>
+    <string name="app_saved_sms">Բարև, Ձեր հեռախոսահամարը ընդգրկվել է Sim Card Change Notifier ծրագրում և Դուք կստանաք կարճ հաղորդագրություն՝ SIM քարտի փոփոխության դեպքում: Ծրագրի կարգավորումները կարող եք փոփոխել զանգահարելով %1$s հեռախոսահամարով: Դուք կարող եք վերաթողարկել այս համարը ուղղարկելով կարճ հաղորդագրություն «sccn_reset_show_number» տեքստով։</string>
+    <string name="toast_on_incorrect_trusted_number">Վստահելի հեռախոսահամրը սխալ է</string>
+    <string name="alert_massage_dual_sim">Նշում. Դուք պատրաստվում եք գրանցել մեկ SIM քարտ: Սեղմեք Չեղարկել, եթե Դուք ցանկանում եք գրանցել մեկից ավելի SIM քարտեր, հակառակ դեպքում սեխմեք Շարունակել:</string>
+    <string name="alert_massage_send_sms_on_save">Ցանկանում ե՞ք ուղարկել պահպանված ինֆորմացիան վստահելի հեռախոսահամարին:</string>
+    <string name="alert_title_dual_sim">Dual Sim Հեռախոսներ</string>
+    <string name="alert_title_send_sms_on_save">ՈՒղարկել SMS?</string>
+    <string name="continue_button">Շարունակել</string>
+    <string name="send_sms_button">ՈՒղարկել</string>
+    <string name="dont_send_sms_button">Չուղարկել</string>
+    <string name="title_activity_about">Ծրագրի մասին</string>
+    <string name="action_settings">Կարգավորումներ</string>
+    <string name="title_activity_info">Տեղեկատվություններ</string>
+    <string name="title_activity_trusted_numbers">Վստահելի հեռախոսահամրներ</string>
+    <string name="country_prompt">Ընտրեք Երկիրը</string>
+    <string name="test_button_text">Թեստ</string>
+    <string name="save_button_text">Հիշել</string>
+    <string name="info_button_text">Տեղեկատվություններ</string>
+    <string name="settings_button_text">Կարգավորումներ</string>
+    <string name="address">Հասցե՝</string>
+    <string name="cancel_button">Չեղարկել</string>
+    <string name="test_sms_result_ok">Թեստային հաղորդագրությունը ուղղարկվել է։</string>
+    <string name="test_sms_result_error_generic">Ձախողվել է ուղղարկել թեստային հաղորդագրությունը\nԽնդրում ենք ստուգել համարի ճշտությունը և քարտի մնացորդը։</string>
+    <string name="test_sms_result_error_no_service">Ձախողվել է ուղղարկել թեստային հաղորդագրությունը\nԾառայությունը անհասանելի է։</string>
+    <string name="test_sms_result_error_null_pdu">Ձախողվել է ուղղարկել թեստային հաղորդագրությունը\nՉի տրամադրվել «PDU»։</string>
+    <string name="test_sms_result_error_radio_off">Ձախողվել է ուղղարկել թեստային հաղորդագրությունը\nԿապը անջատված է։</string>
+    <string name="test_sms_result_error_unknown">Ձախողվել է ուղղարկել թեստային հաղորդագրությունը\nԽնդրում ենք ստուգել համարի ճշտությունը, քարտի մնացորդը և կապի ծառայությունը</string>
+ 	<string name="test_sms_result_title_info">Տեղեկություն</string>
+    <string name="test_sms_result_title_error">Սխալ</string>
+</resources>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:title="@string/menu_settings"/>
+        <item
+        android:id="@+id/menu_info"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_info"/>
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_about"/>
+	<item
+        android:id="@+id/menu_quit"
+        android:orderInCategory="100"
+        android:title="@string/quit"/>
+      
+</menu> 

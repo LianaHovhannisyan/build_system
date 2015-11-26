@@ -1,0 +1,47 @@
+
+Bellow are the values of fields which were used during publishing "Sim Card
+Change Notifier" application v.2.0 to Android market on 22 Nov 2011.
+
+1. Title - SIM Card Change Notifier
+
+2. Description
+
+This is a SIM Card monitoring application. It will send SMS messages to
+the predefined phone number when the SIM card is replaced in your mobile phone.
+ATTENTION: The application will work only on GSM phones with SIM cards. 
+
+In this new release the application icon is hidden in the applications list: 
+after filling the required information on the setup screen the icon of the 
+application  will disappear from your menu. 
+
+The application could be called back for reconfiguraion by dialing specified number. 
+
+After the setup, in the case that SIM card change is detected, the SMS will be sent 
+to the specified phone number each time the phone reboots.  
+
+If accessible, the current GPS coordinates will also be included in the SMS.
+NOTE: depending on device settings, GPS availability, and GSM provider settings these 
+may not be available.
+
+The active sim serial number can be registered by sending SMS with custom 
+content from specified phone number.
+
+In case, if the admin rights permission is granted to the application, the device can be remotly 
+blocked by setting custom password.
+
+Please report bugs to authors with more details. We were unable to reproduce the issue
+reported by some users about SMS being sent even when the SIM card is not changed.  Please
+specify sequence of steps you did, and if possible, specify your carrier.
+
+3. Promo Text
+
+Ever lost a phone? Get informed about SIM card change in your GSM phone.
+
+4. Application type - Application
+5. Category - Communications
+6. Copy Protection - Off
+7. Content Rating - Pre-Teen 
+8. Locations - All Locations
+9. Website - http://www.instigatedesign.com
+10. Email - mobile@instigatedesign.com
+11. Phone - +37410248411

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <string name="add_sim_serial">sccn_add_current_sim</string>
+    <string name="block_device">sccn_block_device</string>
+    <string name="reset_show_number">sccn_reset_show_number</string>
+    <!-- unlock_device Only for testing -->
+    <string name="hint_owner_name">Owner Name</string>
+    <string name="other_country">Other</string>
+    <string name="hint_authorize">Trusted Number</string>
+    <string name="hint_email">Your Email@example.com</string>
+    <string name="register_sim">Registered SIM cards</string>
+    <string name="info_text">In case of the SIM card change, SMS messages and emails with GPS coordinates will be sent to the trusted number.</string>
+    <string name="app_name">SIM Card Change Notifier</string>
+    <string name="app_version">Version\n%1$s</string>
+    <string name="google_tracking_id">UA-40728279-2</string>
+    <string name="developer_name">Software developer\n Instigate Mobile CJSC</string>
+    <string name="company_name">Instigate Mobile CJSC</string>
+    <string name="logo_image_desc">Logo Description</string>
+    <string name="website_title">Website</string>
+    <string name="app_url">http://ggg.instigatemobile.com/simcardchangenotifier</string>
+    <string name="developer_url">http://ggg.instigatemobile.com</string>
+    <string name="licence_info">© 2015 Instigate Mobile CJSC\nYerevan, Armenia</string>
+    <string name="support_email">info@instigatedesign.com</string>
+    <string name="rate_us_url">https://play.google.com/store/apps/details?id=instigate.simCardChangeNotifier</string>
+    <string name="support_title">Contact Us</string>
+    <string name="rate_us_title">Rate Us</string>
+    <string name="about_text">This app informs about SIM card change if it occurs without permission of the mobile device owner.&lt;br />
+ Report includes the number of newly inserted SIM cards, GPS coordinates and address of the mobile device.&lt;br />&lt;br /> &lt;u>&lt;b>Application configuration settings&lt;/b>&lt;/u>&lt;br />&lt;br />
+ 1. Fill the name of the mobile device owner in \"Owner Name\" field.&lt;br />&lt;br />
+ 2. Fill the Trusted phone number in \"Trusted Number\" field. Trusted number will receive SMS notifications when SIM card is changed.&lt;br /> &lt;br />
+ 3. To check the correctness of the Trusted Number, press Test button. SMS will be sent to the Trusted Number.&lt;br />
+  &lt;b>IMPORTANT:&lt;/b> Sending a test SMS will cost real money (by your operator tariffs).&lt;br /> &lt;br />
+ 4. Fill your email address in \"Your Email@example.com\" field. You will receive email notofications in case of SIM card change.&lt;br /> &lt;br />
+ 5.  The app will register the current SIM card and show it in registered SIM cards section. To add multiple SIM cards, please remove the current SIM card and insert another SIM card without saving the app.&lt;br />
+ When a new SIM card is inserted and the app is opened, new SIM card appears in Registered SIM cards section with white colored label.&lt;br />&lt;br />
+ 6. Set location sending time interval in Settings section. By default it is set to 2 hours. This is period of sending GPS coordinates, to track the phone in case of SIM card change.&lt;br />&lt;br />
+ 7. Set number to show the app in Settings section. By default it is ###7226. When the app is saved, it is hidden from device app list. By dialing this number the app appears again.&lt;br />&lt;br />
+ 8. To have the possibility to remotely block the device by setting password, enable administrator rights permission in Settings section.&lt;br />&lt;br />
+ 9. Set password for blocking device in Settings section. By default it is random password. This password will be used to remotely block the device.&lt;br />NOTE: To enable this setting the Administrator Permissions should be checked. &lt;br />&lt;br />
+ 10. To save the information and hide the app, press Save button.&lt;br /> &lt;b>IMPORTANT:&lt;/b> When the configurations are saved, the app will ask to send SMS notification with saved information to trusted number. Then the app will disappear from the list of apps.&lt;br />&lt;br />
+ 11. To change the configuration, please dial Show Number. Show Number can be changed from Settings menu. &lt;br />&lt;br /> &lt;u>&lt;b>SMS Notifications and Commands&lt;/b>&lt;/u>&lt;br />&lt;br />
+ 1. When a new, unregistered SIM card is inserted into the phone the trusted number will receive "Notification SMS" and email wiil be send to "Your Email".&lt;br />
+ SMS notification includes the number of newly inserted SIM card, GPS coordinates (if available) and address of the mobile device (if available).
+ By default the application sends SMS notifications with mobile device location every 2 hours to track the phone. You can change time interval from settings.&lt;br />&lt;br />
+ 2. The owner of Trusted Number, receiving SMS notifications, can always include the newly added SIM card into registered list by replying with &lt;b>sccn_add_current_sim&lt;/b> SMS message.&lt;br />&lt;br />
+ 3. The owner of Trusted Number, receiving SMS notifications, can remotely block the device by setting password, if replying with &lt;b>sccn_block_device&lt;/b> SMS message.&lt;br />&lt;br />
+ 4. The owner of Trusted Number, can remotely reset the Show Number to its default by replying with &lt;b>sccn_reset_show_number&lt;/b> SMS message.&lt;br />&lt;br />
+ More SMS commands will be added in future releases.&lt;br />
+ Be careful and do not loose your phone. We have tested the app on a lot of phones,
+ but cannot be sure for each phone and model.
+ Please send your feedback, questions and issues found.</string>
+    <!-- The templates for SMS that are being sent. -->
+    <string name="validation_sms">Hi. This is a test SMS sent from Sim Card Change Notifier app.</string>
+    <string name="notification_sms">SIM card of %1$s \'s phone is changed. \n
+ You can reply with the following SMS commands: \n
+ - sccn_add_current_sim - authorize the newly inserted SIM Card \n
+ - sccn_block_device - block the phone with a new password (NOTE: the app must have administrator permissions) \n
+ The new password will be: %2$s \n
+ You\'ll receive an SMS with the location of the phone, when its location data is available.</string>
+    <string name="email_logo_id">sccn.app.icon.png</string>
+    <string name="email_template">&lt;html> 
+	&lt;body> 				      
+	&lt;div align=\"center\">&lt;img src=\"cid:%1$s\" />&lt;/div>
+	&lt;h1 align=\"center\">%2$s&lt;/h1>
+	&lt;div > This mail has been sent to you as it has been mentioned in Sim Card Change Notifier together with the trusted number (%3$s).
+	If you haven\'t done that please ignore this mail.&lt;/div>
+	&lt;div >&lt;br />%4$s&lt;/div>&lt;br />
+	&lt;div align=\"center\" >&lt;a href=\"%5$s\">&lt;button>%6$s&lt;/button>&lt;/a>  
+	&lt;a href=\"%7$s\">&lt;button>%8$s&lt;/button>&lt;/a>&lt;br />
+	----- &lt;br />
+	&lt;strong>\"%9$s\"&lt;/strong>&lt;br />
+	&lt;a href=\"mailto:%11$s\">%11$s&lt;/a> &lt;br /> 
+	&lt;a href=\"%10$s\">%10$s&lt;/a> &lt;/div>
+	&lt;/html></string>
+    <string name="gps_coordinates_sms">SIM card of %1$s\'s phone is changed. \n
+ Phone is near: %2$s and located at URL: \nhttp://maps.google.com/?q=%3$s,%4$s\n</string>
+    <string name="gps_location_sms">SIM card of %1$s \'s phone is changed.\n
+ Phone is located at URL: \nhttp://maps.google.com/?q=%2$s,%3$s\n</string>
+    <string name="notification_email">SIM card of %1$s\'s phone is changed. &lt;br />
+You can reply with the following SMS commands from the trusted number you have mentioned in the app (%2$s): &lt;br />
+ - sccn_add_current_sim - authorize the newly inserted SIM Card &lt;br />
+ - sccn_block_device - block the phone with a new password (NOTE: the app must have administrator permissions)&lt;br />
+The new password will be: %3$s &lt;br />
+ You\'ll receive an SMS with the location of the phone, when its location data is available.</string>
+    <string name="gps_coordinates_email">SIM card of %1$s\'s phone is changed.&lt;br />
+ Phone is near: %2$s and located at URL:&lt;br />&lt;a href=\"http://maps.google.com/?q=%3$s,%4$s\">http://maps.google.com/?q=%3$s,%4$s&lt;/a></string>
+    <string name="gps_location_email">SIM card of %1$s\'s phone is changed.&lt;br />
+ Phone is located at URL:&lt;br />&lt;a href=\"http://maps.google.com/?q=%2$s,%3$s\">http://maps.google.com/?q=%2$s,%3$s&lt;/a></string>
+    <string name="password_set_confirm_sms">%1$s\'s phone is blocked with the following Password: %2$s.</string>
+    <string name="admin_rights_missing_sms">Cannot block %1$s \'s phone as the application does not have administrator rights.</string>
+    <string name="unknown_error_sms">Unknown Error.</string>
+    <string name="new_sim_registered_sms">New SIM card is registered in %1$s \'s phone.</string>
+    <string name="sim_registered_sms">This SIM card is already registered in %1$s \'s phone.</string>
+    <string name="show_number_reset_seccess">The Show Number of %1$s \'s phone was reseted to default: ###7226.</string>
+    <string name="show_number_reset_fail">Failed to reset Show Number.</string>
+    <string name="app_saved_sms">Hi, Your number was included in Sim Card Change Notifier app, and you will receive SMS notification in case of SIM card change. The settings of the app can be changed by dialing: %1$s. Also You can reset this number by sending SMS with sccn_reset_show_number </string>
+    <string name="admin_rights_explanation"> If you want to be able to remotely block the device, you must activate administrator rights.</string>
+    <!-- Setting Xml. -->
+    <string name="menu_settings">Settings</string>
+    <string name="pref_setting">Settings</string>
+    <string name="minimum_requirement">IMPORTANT: Enter minimum %1$s character.</string>
+    <!-- interval -->
+    <string name="pref_sms_time_title">Location sending time interval</string>
+    <string name="pref_sms_time_summary">Time interval for sending GPS location</string>
+    <!-- unhide number -->
+    <string name="pref_unhide_number_title">Number to show the app</string>
+    <string name="pref_unhide_number_summary">Dial this number to show the app</string>
+    <!-- Administrator permissions -->
+    <string name="pref_admin_rights_title">Administrator Permissions</string>
+    <string name="pref_admin_rights_summary">Check if you want to be able to remotly block the device</string>
+    <!-- unlock password -->
+    <string name="pref_unlock_password_title">Password for blocking device</string>
+    <string name="pref_unlock_password_summary">This password will be used to block device remotely</string>
+    <!-- UI massages -->
+    <string name="alert_dialog_massage">Are you sure you want to delete SIM card?</string>
+    <string name="error_deleting_massage">To activate application you must have at least one registered SIM card.</string>
+    <string name="massage_hide_icon_title">Notification</string>
+    <string name="massage_hide_icon">Now the icon of the application will disappear from your menu.\n
+ To show the application dial: %1$s</string>
+    <string name="toast_on_owner_name">Please enter the phone owner name</string>
+    <string name="toast_on_trusted_number">Please enter the trusted phone number</string>
+    <string name="toast_on_short_trusted_number">Trusted phone number is too short</string>
+    <string name="toast_on_incorrect_trusted_number">Trusted phone number is incorrect</string>
+    <string name="toast_on_invalid_email">Invalid Email address</string>
+    <string name="toast_no_sim_inserted">To activate application you must have at least one registered SIM card.</string>
+    <string name="alert_massage_old_data">Do you want to export old data during the update?</string>
+    <string name="alert_massage_dual_sim">NOTE: You are going to register only one SIM card. Press Cancel if you want to register more SIM cards, if not, Press Continue. </string>
+    <string name="alert_massage_send_sms_on_save">Do you want to send saved information to trusted number?</string>
+    <string name="alert_title_dual_sim">Dual Sim Phones</string>
+    <string name="alert_title_send_sms_on_save">Send SMS?</string>
+    <string name="continue_button">Continue</string>
+    <string name="send_sms_button">Send</string>
+    <string name="quit">Quit</string>
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+    <string name="ok_button">OK</string>
+    <string name="dont_send_sms_button">Don\'t Send</string>
+    <string name="old_version_warning_title">Warning!</string>
+    <string name="old_version_warning_text">Please uninstall the old version</string>
+    <string name="title_activity_about">About</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_info">Info</string>
+    <string name="title_activity_trusted_numbers">Trusted Numbers</string>
+    <string name="country_prompt">Choose a country</string>
+    <string name="test_button_text">Test</string>
+    <string name="save_button_text">Save</string>
+    <string name="info_button_text">Info</string>
+    <string name="settings_button_text">Settings</string>
+    <string name="address">Address:</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="test_sms_result_ok">Test SMS is sent.</string>
+    <string name="test_sms_result_error_generic">Failed to send test SMS\nPlease check the number or your sim balance.</string>
+    <string name="test_sms_result_error_no_service">Failed to send test SMS\nService is currently unavailable.</string>
+    <string name="test_sms_result_error_null_pdu">Failed to send test SMS\nNo PDU is provided.</string>
+    <string name="test_sms_result_error_radio_off">Failed to send test SMS\nRadio was explicitly turned off.</string>
+    <string name="test_sms_result_error_unknown">Failed to send test SMS\nPlease check the number, sim balance and service</string>
+    <string name="test_sms_result_title_info">Info</string>
+    <string name="test_sms_result_title_error">Error</string>
+
+</resources>

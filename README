@@ -1,0 +1,24 @@
+PREREQUISITES
+
+Android projects
+- To build Android projects it's required that the Android SDK is setup on your system
+
+REQUIREMENTS
+
+- Create local.properties file to set the location of the Android SDK.  
+  Example of local.properties file:
+	sdk.dir=/path/to/Android/Sdk
+
+  NOTE: The local.properties file should not be committed under the Version Control.
+
+SOURCE PACKAGE CONTENT
+
+- AndroidManifest.xml
+
+ It's required that the project to be added into the build system had it's AndroidManifest.xml file with corresponding configuration.
+
+
+INSTALL/UNINSTALL
+
+Make sure adb is setup (comming with Android SDK, just make sure sdk/platform-tools are added to your PATH)
+Make sure the app has no admin previledges to uninstall it via gradle

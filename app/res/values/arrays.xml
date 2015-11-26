@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="update_time_string">
+        <item name="5">5 minutes</item>
+        <item name="10">10 minutes</item>
+        <item name="20">20 minutes</item>
+        <item name="30">30 minutes</item>
+        <item name="60">1 Hour</item>
+        <item name="120">2 Hours</item>
+        <item name="180">3 Hours</item>
+        <item name="300">5 Hours</item>
+    </string-array>
+    <string-array name="update_time_value">
+        <item name="5">5</item>
+        <item name="10">10</item>
+        <item name="20">20</item>
+        <item name="30">30</item>
+        <item name="60">60</item>
+        <item name="120">120</item>
+        <item name="180">180</item>
+        <item name="300">300</item>
+    </string-array>
+    <string-array name="supported_languages">
+        <item name="english">en</item>
+        <item name="armenian">hy</item>
+        <item name="russian">ru</item>
+    </string-array>
+
+</resources>

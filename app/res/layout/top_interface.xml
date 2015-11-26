@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#605C5C"
+    android:orientation="vertical">
+
+    <!--TODO: Find usage of top_interface.xml file-->
+
+    <ImageView
+        android:id="@+id/logoID"
+        android:src="@drawable/icon"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="50dip" />
+
+    <TextView
+        android:id="@+id/serif"
+        android:textColor="#CBC5C5"
+        android:text="In case of the SIM card change, SMS messages with GPS coordinates will be sent to the number specified below."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:typeface="serif"
+        android:paddingBottom="40dip" />
+
+    <LinearLayout
+        android:id="@+id/layoutID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/mainField"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="10dip" />
+
+        <Button
+            android:text="Save"
+            android:id="@+id/saveNumber"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listOfPhoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:key="sccn.settings" >
+        <ListPreference
+            android:defaultValue="120"
+            android:entries="@array/update_time_string"
+            android:entryValues="@array/update_time_value"
+            android:key="prefSmsInterval"
+            android:persistent="true"
+            android:summary="@string/pref_sms_time_summary"
+            android:title="@string/pref_sms_time_title" />
+
+        <instigate.simCardChangeNotifier.ui.CustomEditTextPreference
+            android:defaultValue=""
+            android:imeOptions="actionDone"
+            android:inputType="phone|textNoSuggestions"
+            android:key="unhide_number"
+            android:persistent="true"
+            android:summary="@string/pref_unhide_number_summary"
+            android:title="@string/pref_unhide_number_title" />
+
+        <CheckBoxPreference
+            android:key="pref_admin_rights"
+            android:summary="@string/pref_admin_rights_summary"
+            android:title="@string/pref_admin_rights_title" />
+
+        <instigate.simCardChangeNotifier.ui.CustomEditTextPreference
+            android:defaultValue=""
+            android:enabled="false"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions"
+            android:key="unlock_password"
+            android:persistent="true"
+            android:singleLine="true"
+            android:summary="@string/pref_unlock_password_summary"
+            android:title="@string/pref_unlock_password_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

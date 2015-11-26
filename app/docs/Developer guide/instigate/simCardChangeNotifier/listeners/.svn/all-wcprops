@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/!svn/ver/2022/projects/sim_card_change_notifier/trunk/docs/Developer%20guide/instigate/simCardChangeNotifier/listeners
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/2022/projects/sim_card_change_notifier/trunk/docs/Developer%20guide/instigate/simCardChangeNotifier/listeners/package-frame.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/2022/projects/sim_card_change_notifier/trunk/docs/Developer%20guide/instigate/simCardChangeNotifier/listeners/package-summary.html
+END
+LoadAtStartup.html
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/2022/projects/sim_card_change_notifier/trunk/docs/Developer%20guide/instigate/simCardChangeNotifier/listeners/LoadAtStartup.html
+END
+CustomDeviceAdminReceiver.html
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/!svn/ver/2022/projects/sim_card_change_notifier/trunk/docs/Developer%20guide/instigate/simCardChangeNotifier/listeners/CustomDeviceAdminReceiver.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/2022/projects/sim_card_change_notifier/trunk/docs/Developer%20guide/instigate/simCardChangeNotifier/listeners/package-tree.html
+END
+LaunchAppViaDialReceiver.html
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/!svn/ver/2022/projects/sim_card_change_notifier/trunk/docs/Developer%20guide/instigate/simCardChangeNotifier/listeners/LaunchAppViaDialReceiver.html
+END
+SMSBroadcastReceiver.html
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/2022/projects/sim_card_change_notifier/trunk/docs/Developer%20guide/instigate/simCardChangeNotifier/listeners/SMSBroadcastReceiver.html
+END

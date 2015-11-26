@@ -1,0 +1,89 @@
+// Top-level build file to add configuration options common to all sub-projects/modules.
+
+// Configures the code driving the build
+buildscript {
+	repositories {
+		jcenter()
+	}
+
+	dependencies {
+		classpath 'com.android.tools.build:gradle:1.3.1'
+	}
+}
+
+// Plugin used for building Android application 
+apply plugin: 'com.android.application'
+
+// Configures all the parameters for the android build
+android {
+	// Mondatory configuration
+	compileSdkVersion SDK_VERSION.toInteger()
+	buildToolsVersion BUILD_TOOLS_VERSION
+
+	// Optional configuration
+	defaultConfig {
+		versionCode VERSION_CODE.toInteger()
+		versionName VERSION_NAME
+		minSdkVersion MIN_SDK_VERSION.toInteger()
+		targetSdkVersion TARGET_SDK_VERSION.toInteger()
+
+		// TODO: Move configuration to gradle.properties
+		compileOptions {
+			sourceCompatibility JavaVersion.VERSION_1_7
+			targetCompatibility JavaVersion.VERSION_1_7
+		}
+	}
+
+	// Configure Source sets
+	sourceSets {
+		main {
+			manifest.srcFile MANIFEST_SRCFILE
+			java.srcDirs = [JAVA_SRCDIRS]
+			resources.srcDirs = [RESOURCES_SRCDIRS]
+			aidl.srcDirs = [AIDL_SRCDIRS]
+			renderscript.srcDirs = [RENDERSCRIPT_SRCDIRS]
+			res.srcDirs = [RES_SRCDIRS]
+			assets.srcDirs = [ASSETS_SRCDIRS]
+		}
+
+		// TODO: Find out why this is not working
+		//release.setRoot('build/release')
+	}
+
+	// Configure app signing
+	signingConfigs {
+		release_config {
+			storeFile file(STORE_FILE)
+			storePassword STORE_PASSWORD
+			keyAlias KEY_ALIAS
+			keyPassword KEY_PASSWORD
+		}
+	}
+
+	// Configure build types
+	buildTypes {
+		release {
+			minifyEnabled true
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), PROGUARD_FILE
+			signingConfig signingConfigs.release_config
+		}
+	}
+
+	lintOptions {
+		checkReleaseBuilds false
+		// Or, if you prefer, you can continue to check for errors in release builds,
+		// but continue the build even when errors are found:
+		abortOnError false
+	}
+}
+
+dependencies {
+	//compile fileTree(dir: 'app/libs', include: ['*.jar'])
+	compile 'com.android.support:appcompat-v7:23.1.0'
+	compile 'com.android.support:support-v4:23.1.0'
+	compile files('app/libs/activation.jar')
+	compile files('app/libs/additionnal.jar')
+	compile files('app/libs/libGoogleAnalyticsServices.jar')
+	compile files('app/libs/libphonenumber-7.1.0.jar')
+	compile files('app/libs/mail.jar')
+}
